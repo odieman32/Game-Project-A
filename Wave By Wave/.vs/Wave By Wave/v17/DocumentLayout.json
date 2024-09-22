@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\shawn\\OneDrive\\Desktop\\Wave By Wave\\Project-A\\Wave By Wave\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5278CA65-D075-49E3-3AFA-7673F93DED51}|Assembly-CSharp.csproj|c:\\users\\shawn\\onedrive\\desktop\\wave by wave\\project-a\\wave by wave\\assets\\scripts\\attributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5278CA65-D075-49E3-3AFA-7673F93DED51}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\attributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5278CA65-D075-49E3-3AFA-7673F93DED51}|Assembly-CSharp.csproj|C:\\Users\\shawn\\OneDrive\\Desktop\\Wave By Wave\\Project-A\\Wave By Wave\\assets\\scripts\\animation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5278CA65-D075-49E3-3AFA-7673F93DED51}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\animation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Attributes.cs",
+              "DocumentMoniker": "C:\\Users\\shawn\\OneDrive\\Desktop\\Wave By Wave\\Project-A\\Wave By Wave\\Assets\\Scripts\\Attributes.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Attributes.cs",
+              "ToolTip": "C:\\Users\\shawn\\OneDrive\\Desktop\\Wave By Wave\\Project-A\\Wave By Wave\\Assets\\Scripts\\Attributes.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Attributes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T02:06:14.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Animation.cs",
+              "DocumentMoniker": "C:\\Users\\shawn\\OneDrive\\Desktop\\Wave By Wave\\Project-A\\Wave By Wave\\Assets\\Scripts\\Animation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Animation.cs",
+              "ToolTip": "C:\\Users\\shawn\\OneDrive\\Desktop\\Wave By Wave\\Project-A\\Wave By Wave\\Assets\\Scripts\\Animation.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Animation.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAYwCoAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T00:26:50.64Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
