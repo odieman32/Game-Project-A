@@ -4,20 +4,29 @@ using UnityEngine;
 
 public class Attributes : MonoBehaviour
 {
-    public int health;
-    public int attack;
+    [SerializeField] private float maxHealth;
 
-    public void TakeDamage(int amount)
+    private float currentHealth;
+
+    public HealthBar healthBar;
+
+    private void Start()
     {
-        health -= amount;
+        currentHealth = maxHealth;
+
+        healthBar.SetSLiderMax(maxHealth);
+    }
+    public void TakeDamage(float amount)
+    {
+        currentHealth -= amount;
+        healthBar.SetSlider(currentHealth);
     }
 
-    public void DealDamage(GameObject target)
+    public void Update()
     {
-        var atm = target.GetComponent<Attributes>();
-        if ( (atm != null))
+        if (Input.GetKeyDown(KeyCode.K))
         {
-            atm.TakeDamage(attack);
+            TakeDamage(1f);
         }
     }
 }

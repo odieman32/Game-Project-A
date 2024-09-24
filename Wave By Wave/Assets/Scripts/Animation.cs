@@ -7,6 +7,7 @@ public class NewBehaviourScript : MonoBehaviour
     Animator animator;
     int isWalkingHash;
     int isJumpingHash;
+    int isAttackingHash;
 
     // Start is called before the first frame update
     void Start()
@@ -14,6 +15,7 @@ public class NewBehaviourScript : MonoBehaviour
         animator = GetComponent<Animator>();
         isWalkingHash = Animator.StringToHash("IsWalking");
         isJumpingHash = Animator.StringToHash("IsJumping");
+        isAttackingHash = Animator.StringToHash("IsAttacking");
     }
 
     // Update is called once per frame
@@ -21,12 +23,14 @@ public class NewBehaviourScript : MonoBehaviour
     {
         bool isWalking = animator.GetBool(isWalkingHash);
         bool isJumping = animator.GetBool(isJumpingHash);
+        bool isAttacking = animator.GetBool(isAttackingHash);
 
         // Check for any movement input (W, A, S, D)
         bool forwardPress = Input.GetKey(KeyCode.W);
         bool backwardPress = Input.GetKey(KeyCode.S);
         bool leftPress = Input.GetKey(KeyCode.A);
         bool rightPress = Input.GetKey(KeyCode.D);
+        bool attackPress = Input.GetKey(KeyCode.Mouse0);
 
         // Check if any movement key is pressed
         bool movementPress = forwardPress || backwardPress || leftPress || rightPress;
@@ -45,7 +49,7 @@ public class NewBehaviourScript : MonoBehaviour
             animator.SetBool(isWalkingHash, false);
         }
 
-        // Jumping logic
+        // Jumping
         if (!isJumping && spaceJump)
         {
             animator.SetBool(isJumpingHash, true);
@@ -53,6 +57,16 @@ public class NewBehaviourScript : MonoBehaviour
         if (isJumping && !spaceJump)
         {
             animator.SetBool(isJumpingHash, false);
+        }
+
+        //Attacking
+        if (!isAttacking && attackPress)
+        {
+            animator.SetBool(isAttackingHash, true);
+        }
+        if (isAttacking && !attackPress)
+        {
+            animator.SetBool(isAttackingHash, false);
         }
     }
 }
