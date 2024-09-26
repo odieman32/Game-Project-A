@@ -6,47 +6,47 @@ using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
-    public static bool GameIsPaused = false;
+    public static bool GameIsPaused = false; //bool to tell if game is paused
 
-    public GameObject pauseMenuUI;
+    public GameObject pauseMenuUI; //game object for UI
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape)) //Checks if escape is pressed
         {
-            if (GameIsPaused)
+            if (GameIsPaused) //if game is paused then pressing it will call the resume button
             {
                 Resume();
             }
-            else
+            else //all if game is not paused it will pause the game with the Pause function
             {
                 Pause();
             }
         }
     }
-    void Resume()
+    public void Resume()
     {
-        pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
-        GameIsPaused = false;
+        pauseMenuUI.SetActive(false); //all pause menu UI is set to false
+        Time.timeScale = 1f; //resumes time back to normal
+        GameIsPaused = false; //Game paused is put back to false
+        Cursor.lockState = CursorLockMode.Locked; //cursor goes back to the camera
+        Cursor.visible = false; //cursor is not visable
 
     }
 
     void Pause()
     {
-        pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
-        GameIsPaused = true;
-    }
-
-    public void LoadMenu()
-    {
-        Debug.Log("Loading Menu..");
+        pauseMenuUI.SetActive(true);//pause is set at active
+        Time.timeScale = 0f; //stops the time of the game to freeze everything
+        GameIsPaused = true; //Game is puased is set to true
+        Cursor.lockState = CursorLockMode.None; //allows use of cursor to click buttons
+        Cursor.visible = true; //cursor is visable
     }
 
     public void QuitGame()
     {
-        Debug.Log("Quitting Game");
+        Debug.Log("Quitting Game"); //logs quitting game
+        Application.Quit(); //quits out of application
     }
 }
 

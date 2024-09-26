@@ -7,16 +7,8 @@
       "RelativeMoniker": "D:0:0:{5278CA65-D075-49E3-3AFA-7673F93DED51}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5278CA65-D075-49E3-3AFA-7673F93DED51}|Assembly-CSharp.csproj|c:\\users\\shawn\\onedrive\\desktop\\wave by wave\\project-a\\wave by wave\\assets\\scripts\\enemy health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5278CA65-D075-49E3-3AFA-7673F93DED51}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5278CA65-D075-49E3-3AFA-7673F93DED51}|Assembly-CSharp.csproj|C:\\Users\\shawn\\OneDrive\\Desktop\\Wave By Wave\\Project-A\\Wave By Wave\\assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5278CA65-D075-49E3-3AFA-7673F93DED51}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5278CA65-D075-49E3-3AFA-7673F93DED51}|Assembly-CSharp.csproj|c:\\users\\shawn\\onedrive\\desktop\\wave by wave\\project-a\\wave by wave\\assets\\scripts\\enemyhealthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5278CA65-D075-49E3-3AFA-7673F93DED51}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyhealthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5278CA65-D075-49E3-3AFA-7673F93DED51}|Assembly-CSharp.csproj|C:\\Users\\shawn\\OneDrive\\Desktop\\Wave By Wave\\Project-A\\Wave By Wave\\assets\\scripts\\optionsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5278CA65-D075-49E3-3AFA-7673F93DED51}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\optionsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,46 +18,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Enemy Health.cs",
-              "DocumentMoniker": "C:\\Users\\shawn\\OneDrive\\Desktop\\Wave By Wave\\Project-A\\Wave By Wave\\Assets\\Scripts\\Enemy Health.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy Health.cs",
-              "ToolTip": "C:\\Users\\shawn\\OneDrive\\Desktop\\Wave By Wave\\Project-A\\Wave By Wave\\Assets\\Scripts\\Enemy Health.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy Health.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABdAAAA",
+              "Title": "OptionsMenu.cs",
+              "DocumentMoniker": "C:\\Users\\shawn\\OneDrive\\Desktop\\Wave By Wave\\Project-A\\Wave By Wave\\Assets\\Scripts\\OptionsMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\OptionsMenu.cs",
+              "ToolTip": "C:\\Users\\shawn\\OneDrive\\Desktop\\Wave By Wave\\Project-A\\Wave By Wave\\Assets\\Scripts\\OptionsMenu.cs",
+              "RelativeToolTip": "Assets\\Scripts\\OptionsMenu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T02:50:14.007Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EnemyHealthBar.cs",
-              "DocumentMoniker": "C:\\Users\\shawn\\OneDrive\\Desktop\\Wave By Wave\\Project-A\\Wave By Wave\\Assets\\Scripts\\EnemyHealthBar.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyHealthBar.cs",
-              "ToolTip": "C:\\Users\\shawn\\OneDrive\\Desktop\\Wave By Wave\\Project-A\\Wave By Wave\\Assets\\Scripts\\EnemyHealthBar.cs",
-              "RelativeToolTip": "Assets\\Scripts\\EnemyHealthBar.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T02:48:44.076Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainMenu.cs",
-              "DocumentMoniker": "C:\\Users\\shawn\\OneDrive\\Desktop\\Wave By Wave\\Project-A\\Wave By Wave\\Assets\\Scripts\\MainMenu.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu.cs",
-              "ToolTip": "C:\\Users\\shawn\\OneDrive\\Desktop\\Wave By Wave\\Project-A\\Wave By Wave\\Assets\\Scripts\\MainMenu.cs",
-              "RelativeToolTip": "Assets\\Scripts\\MainMenu.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T02:04:28.816Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T03:29:18.48Z"
             },
             {
               "$type": "Document",
@@ -75,9 +40,9 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\PauseMenu.cs",
               "ToolTip": "C:\\Users\\shawn\\OneDrive\\Desktop\\Wave By Wave\\Project-A\\Wave By Wave\\Assets\\Scripts\\PauseMenu.cs",
               "RelativeToolTip": "Assets\\Scripts\\PauseMenu.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAjAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCoAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T01:27:03.006Z",
+              "WhenOpened": "2024-09-26T02:20:02.233Z",
               "EditorCaption": ""
             }
           ]
