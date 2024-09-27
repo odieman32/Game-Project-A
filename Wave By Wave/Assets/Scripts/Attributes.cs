@@ -10,6 +10,10 @@ public class Attributes : MonoBehaviour
 
     public HealthBar healthBar;
 
+    public GameOver gameOverM;
+
+    private bool isDead;
+
     private void Start()
     {
         currentHealth = maxHealth;
@@ -27,6 +31,13 @@ public class Attributes : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.K))
         {
             TakeDamage(1f);
+        }
+        if (currentHealth <= 0 && !isDead)
+        {
+            isDead = true;
+            gameObject.SetActive(false);
+            gameOverM.gameOver();
+            Debug.Log("Dead");
         }
     }
 }

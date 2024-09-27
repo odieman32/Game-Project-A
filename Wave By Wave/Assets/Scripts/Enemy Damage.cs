@@ -15,7 +15,7 @@ public class EnemyDamage : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent<Attributes>(out Attributes damageComponent))
         {
-            damageComponent.TakeDamage(1);
+            damageComponent.TakeDamage(4);
         }
     }
 
