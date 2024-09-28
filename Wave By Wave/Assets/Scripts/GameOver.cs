@@ -5,30 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
-    public GameObject gameOverUI;
-    // Start is called before the first frame update
-    void Start()
-    {
+    public GameObject gameOverUI;//Game object for script
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void gameOver()
+    public void gameOver() //sets the ui on and allows user to use clicker
     {
         gameOverUI.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
-    public void Restart()
+    public void Restart() //button to restart the game
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void MainMenu()
+    public void MainMenu() //button to go back to main menu
     {
         SceneManager.LoadScene(0);
     }
