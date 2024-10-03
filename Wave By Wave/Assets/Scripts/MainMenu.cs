@@ -8,12 +8,13 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         Debug.Log("Start Game!");
-        //Loads the sceane corrisponding by number
+        //Loads the sceane corresponding by number
         SceneManager.LoadSceneAsync(1);
     }
 
     public void QuitGame()
     {
+        //quits out of the application and logs quit game
         Debug.Log("Quit Game!");
         Application.Quit();
     }

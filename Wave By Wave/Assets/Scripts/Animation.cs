@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
+    //Variables for Animator and Movement
     Animator animator;
-    int isWalkingHash;
+    int isWalkingHash; 
     int isJumpingHash;
     int isAttackingHash;
 
@@ -21,6 +22,7 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Variable bools equal the bool of each animation variable
         bool isWalking = animator.GetBool(isWalkingHash);
         bool isJumping = animator.GetBool(isJumpingHash);
         bool isAttacking = animator.GetBool(isAttackingHash);

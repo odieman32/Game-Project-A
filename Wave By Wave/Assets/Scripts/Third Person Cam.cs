@@ -5,17 +5,17 @@ using UnityEngine;
 public class ThirdPersonCam : MonoBehaviour
 {
     [Header("References")]
-    public Transform orientation;
-    public Transform Player;
-    public Transform PlayerMod;
-    public Rigidbody rb;
+    public Transform orientation; //public field for orientation
+    public Transform Player; //public field for the player
+    public Transform PlayerMod; //public vield for the player model
+    public Rigidbody rb; //public field for rigid body
 
-    public float roatationSpeed;
+    public float roatationSpeed; //roatation speed variable
 
     private void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked; //cursor locked
+        Cursor.visible = false; //cursor is not visable
     }
 
     void Update()

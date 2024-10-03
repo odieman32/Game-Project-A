@@ -5,45 +5,46 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     [Header("Movement")]
-    public float moveSpeed;
+    public float moveSpeed; //float for movement speed
 
-    public float groundDrag;
+    public float groundDrag; //float to set ground drag
 
-    public float jumpForce;
-    public float jumpCooldown;
-    public float airMultiplier;
-    bool readyToJump = true;
+    public float jumpForce; //float to set jump force
+    public float jumpCooldown; // float sets jump cool down
+    public float airMultiplier; //float sets air multiplier
+    bool readyToJump = true; //bool to say if player is ready to jump
 
     [Header("Keybinds")]
-    public KeyCode jumpKey = KeyCode.Space;
+    public KeyCode jumpKey = KeyCode.Space; //jump key set to space
 
     [Header("Ground Check")]
-    public float playerHeight;
-    public LayerMask whatIsGround;
-    bool grounded;
+    public float playerHeight; //float for player height
+    public LayerMask whatIsGround; //layer mask for the ground
+    bool grounded; //bool to tell if player is grounded
 
-    public Transform orientation;
+    public Transform orientation; //transform for orientation
 
-    float horizontalInput;
-    float verticalInput;
+    float horizontalInput; //horizontal input variable
+    float verticalInput; //vertical input variable
 
-    Vector3 moveDirection;
+    Vector3 moveDirection; //vertor for moving direction
 
-    Rigidbody rb;
+    Rigidbody rb; //player rigid body variable
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>(); //gets player rigidbody
         rb.freezeRotation = true;
     }
 
     private void Update()
     {
+        //send a raycast to check if the player is on the ground
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
-        MyInput();
-        SpeedControl();
+        MyInput(); //calls my input function
+        SpeedControl(); //call speed control functions
 
-        //handle drag
+        //if statement to handle drag
         if (grounded)
             rb.drag = groundDrag;
         else
@@ -53,15 +54,17 @@ public class PlayerMove : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //fixed update calls move player function
         MovePlayer();
     }
 
     private void MyInput()
     {
+        //variables for the horizontal and vertical input
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
-        //when to jump
+        //if statement to control when to jump
         if(Input.GetKey(jumpKey) && readyToJump && grounded)
         {
             readyToJump = false;
@@ -108,6 +111,7 @@ public class PlayerMove : MonoBehaviour
 
     private void ResetJump()
     {
+        //resets jump to true
         readyToJump = true;
     }
 }

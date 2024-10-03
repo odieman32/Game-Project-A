@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Damage : MonoBehaviour
 {
-    [SerializeField] float health, maxHealth = 3f;
-    [SerializeField] EnemyHealthBar healthBar;
+    [SerializeField] float health, maxHealth = 3f; //field for health and max health
+    [SerializeField] EnemyHealthBar healthBar; //field for the enemy health bar
 
 
     private void Awake()
@@ -14,8 +14,8 @@ public class Damage : MonoBehaviour
     }
     private void Start()
     {
-        health = maxHealth;
-        healthBar.UpdateHealthBar(health, maxHealth);
+        health = maxHealth; //health is equal to max health
+        healthBar.UpdateHealthBar(health, maxHealth); //updates health when these variables change
     }
 
     public void TakeDamage(float damageAmount)

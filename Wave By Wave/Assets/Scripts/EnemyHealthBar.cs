@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class EnemyHealthBar : MonoBehaviour
 {
+    //Fields doe the camera, target and the health bar slider
     [SerializeField] private Slider slider;
     [SerializeField] private Camera Camera;
     [SerializeField] private Transform target;
@@ -13,8 +14,6 @@ public class EnemyHealthBar : MonoBehaviour
     {
         slider.value = currentValue/maxValue;
     }
-
-    // Update is called once per frame
     void Update()
     {
         //lets camera rotate with camera

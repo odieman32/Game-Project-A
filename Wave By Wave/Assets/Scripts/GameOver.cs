@@ -16,11 +16,11 @@ public class GameOver : MonoBehaviour
 
     public void Restart() //button to restart the game
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //loads the game from the start
     }
 
     public void MainMenu() //button to go back to main menu
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(0); //goes back to the main menu (Scene 0)
     }
 }
